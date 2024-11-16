@@ -28,8 +28,8 @@ body {
   font-display: swap;
   font-size: 1rem;
   color: #FEFEFE;
-  font-size: 16px;
-  background-color: #1A1B1D;
+  font-size: 18px;
+  background-color: #010101;
 }
 
 .shareBtn {
@@ -46,7 +46,7 @@ body {
 }
 .elementBtn img {
   position: relative;
-  width: 25px;
+  width: 50px;
 }
 
 .menu {
@@ -69,7 +69,7 @@ body {
   left: 25%;
   height: 1px;
   transform-origin: left;
-  background-color: #1A1B1D;
+  background-color: #010101;
 }
 .menu .line1 {
   top: 35%;
@@ -105,7 +105,7 @@ body {
   right: 5%;
   width: 50px;
   height: 50px;
-  background-color: #1A1B1D;
+  background-color: #010101;
   border: solid 2px #F4591E;
   border-radius: 50%;
   cursor: pointer;
@@ -197,14 +197,14 @@ body {
 section {
   min-height: 80vh;
   padding: 50px 15% 50px 15%;
-  background-color: #1A1B1D;
+  background-color: #010101;
 }
 
 .separator {
   width: 20vw;
   height: 2px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 15px;
+  margin-bottom: 20px;
   background-color: #F4591E;
 }
 
@@ -212,7 +212,7 @@ section {
   position: relative;
   min-height: 100vh;
   max-height: 100vh;
-  color: #9fa0ac;
+  color: #cbccd6;
   background: url("../img/bcc-free-template-rock-hard.jpg");
   background-size: cover;
   background-position: center;
@@ -229,8 +229,7 @@ h1 {
   font-size: 7vh;
   font-weight: 900;
   color: #FEFEFE;
-  text-shadow: 0 2px 10px #1A1B1D;
-  text-transform: uppercase;
+  text-shadow: 0 2px 10px #010101;
   opacity: 0;
   -webkit-animation: opacity 2s cubic-bezier(0.17, 0.67, 0.14, 0.97) both;
   animation: opacity 2s cubic-bezier(0.17, 0.67, 0.14, 0.97) both;
@@ -265,10 +264,10 @@ h2#slogan {
   left: 50%;
   transform: translateX(-50%);
   bottom: 10%;
-  font-size: 5vh;
+  font-size: 4vh;
   font-weight: 600;
   color: #F4591E;
-  text-shadow: 0 2px 10px #1A1B1D;
+  text-shadow: 0 2px 10px #010101;
   opacity: 0;
   transform: translateY(-45px);
   -webkit-animation: slideY 2s cubic-bezier(0.17, 0.67, 0.14, 0.97) both;
@@ -298,7 +297,7 @@ h2#slogan {
   }
 }
 p {
-  color: #9fa0ac;
+  color: #cbccd6;
   line-height: 30px;
   margin: 50px 0 50px 0;
 }
@@ -407,8 +406,8 @@ p.pink:hover {
   border-spacing: 0;
 }
 .date table td {
-  border-bottom: solid 1px #9fa0ac;
-  color: #9fa0ac;
+  border-bottom: solid 1px #cbccd6;
+  color: #cbccd6;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -441,7 +440,7 @@ p.pink:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 50vh;
 }
 
 footer {
@@ -453,55 +452,6 @@ footer {
   text-align: center;
 }
 
-section.blocNewsletter {
-  min-height: inherit;
-  text-align: center;
-  padding: 150px 15%;
-  background: url("../img/background-newsletter.jpg");
-  background-position: 50% 40%;
-  background-size: cover;
-}
-
-form.newsletterForm input {
-  color: #1A1B1D;
-  padding: 15px;
-  border: none;
-  margin: 0;
-  outline: none;
-}
-form.newsletterForm input[type=email] {
-  color: #1A1B1D;
-  border: solid #1A1B1D 3px;
-  width: 50%;
-  border-radius: 999px 0 0 999px;
-}
-form.newsletterForm label[for=checkRobotNews] {
-  color: #9fa0ac;
-}
-form.newsletterForm #hideNews {
-  display: none;
-  margin: 10px 0;
-}
-form.newsletterForm #hideNews input {
-  border-radius: 999px;
-  font-size: 0.9rem;
-  background-color: #FEFEFE;
-}
-form.newsletterForm input[type=submit] {
-  text-transform: uppercase;
-  border: solid #1A1B1D 3px;
-  background-color: white;
-  border-radius: 999px;
-  margin-left: -25px;
-  cursor: pointer;
-  transition: all 250ms cubic-bezier(0, 0.69, 0.46, 0.95);
-}
-form.newsletterForm input[type=submit]:hover {
-  transition: all 250ms cubic-bezier(0, 0.69, 0.46, 0.95);
-  color: #F4591E;
-  transform: translateX(5px);
-}
-
 .contactForm {
   display: flex;
   flex-direction: column;
@@ -509,7 +459,7 @@ form.newsletterForm input[type=submit]:hover {
   align-items: center;
 }
 .contactForm input, .contactForm textarea {
-  color: #1A1B1D;
+  color: #010101;
   padding: 15px;
   width: 70%;
   border: none;
@@ -569,23 +519,23 @@ form.newsletterForm input[type=submit]:hover {
 }
 
 ::-webkit-input-placeholder {
-  color: #1A1B1D;
+  color: #010101;
 }
 
 ::-moz-placeholder {
-  color: #1A1B1D;
+  color: #010101;
 }
 
 :-ms-input-placeholder {
-  color: #1A1B1D;
+  color: #010101;
 }
 
 ::-ms-input-placeholder {
-  color: #1A1B1D;
+  color: #010101;
 }
 
 ::placeholder {
-  color: #1A1B1D;
+  color: #010101;
 }
 
 footer {
@@ -600,7 +550,6 @@ footer p.bolder {
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
   font-weight: bold;
-  text-transform: uppercase;
 }
 footer .socialBanner {
   display: flex;
@@ -608,7 +557,7 @@ footer .socialBanner {
   justify-content: center;
 }
 footer img {
-  max-width: 24px;
+  max-width: 50px;
   margin: 0 2px 0 2px;
   cursor: pointer;
 }
@@ -735,17 +684,6 @@ button[name=backSite] {
     padding: 50px 2% 50px 2%;
   }
 
-  section.blocNewsletter {
-    padding: 50px 2% 50px 2%;
-    background-size: 160%;
-    background-repeat: no-repeat;
-    background-position: 100% 20%;
-  }
-
-  form.newsletterForm input[type=email] {
-    width: 60%;
-  }
-
   .hardLight {
     width: 100%;
   }
@@ -770,14 +708,10 @@ button[name=backSite] {
     transform: none;
   }
 
-  form.newsletterForm input[type=submit]:hover {
-    transform: none;
-  }
-
   .contactForm input[type=submit]:hover {
     transform: none;
     letter-spacing: 0.2rem;
-    color: #1A1B1D;
+    color: #010101;
     background-color: white;
   }
 
