@@ -9,12 +9,12 @@ html {
 }
 
 ::-moz-selection {
-  background-color: #F4591E;
+  background-color: #FEFEFE;
   color: white;
 }
 
 ::selection {
-  background-color: #F4591E;
+  background-color: #FEFEFE;
   color: white;
 }
 
@@ -58,8 +58,8 @@ body {
   right: 5%;
   width: 50px;
   height: 50px;
-  background-color: #F4591E;
-  border: solid 2px #F4591E;
+  background-color: #FEFEFE;
+  border: solid 2px #FEFEFE;
   border-radius: 50%;
   cursor: pointer;
   z-index: 3;
@@ -106,7 +106,7 @@ body {
   width: 50px;
   height: 50px;
   background-color: #010101;
-  border: solid 2px #F4591E;
+  border: solid 2px #FEFEFE;
   border-radius: 50%;
   cursor: pointer;
   transition: all ease-in-out 100ms;
@@ -127,7 +127,7 @@ body {
   transition: all ease-in-out 100ms;
 }
 .ss-menu:hover {
-  background-color: #F4591E;
+  background-color: #8d8d8d;
   transition: all ease-in-out 100ms;
 }
 
@@ -205,15 +205,15 @@ section {
   height: 2px;
   margin-top: 15px;
   margin-bottom: 20px;
-  background-color: #F4591E;
+  background-color: #FEFEFE;
 }
 
 .mainView {
   position: relative;
   min-height: 100vh;
   max-height: 100vh;
-  color: #cbccd6;
-  background: url("../img/bcc-free-template-rock-hard.jpg");
+  color: #FEFEFE;
+  background: url("../img/hader-brush-la-debacle.png");
   background-size: cover;
   background-position: center;
   background-color: transparent;
@@ -266,7 +266,7 @@ h2#slogan {
   bottom: 10%;
   font-size: 4vh;
   font-weight: 600;
-  color: #F4591E;
+  color: #FEFEFE;
   text-shadow: 0 2px 10px #010101;
   opacity: 0;
   transform: translateY(-45px);
@@ -297,7 +297,7 @@ h2#slogan {
   }
 }
 p {
-  color: #cbccd6;
+  color: #FEFEFE;
   line-height: 30px;
   margin: 30px 0 30px 0;
 }
@@ -341,7 +341,6 @@ p.miniPara {
   color: #FEFEFE;
 }
 .imgContent .card::before {
-  content: url("../img/instagram-min-white.svg");
   position: absolute;
   display: flex;
   justify-content: center;
@@ -354,7 +353,6 @@ p.miniPara {
   max-width: 250px;
   height: 250px;
   opacity: 0;
-  background-color: rgba(244, 89, 30, 0.7);
   z-index: 2;
   transition: all ease-in-out 150ms;
 }
@@ -381,22 +379,9 @@ p.miniTitle {
   margin-bottom: 20px;
 }
 
-p.pink {
-  color: #F4591E;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 250ms cubic-bezier(0, 0.69, 0.46, 0.95);
-}
-p.pink:hover {
-  transform: translateX(5px);
-  transition: all 250ms cubic-bezier(0, 0.69, 0.46, 0.95);
-}
-
 #bandVideo {
   width: 640px;
-  background-color: #1E0E18;
+  background-color: #0E0E0E;
   cursor: pointer;
 }
 
@@ -406,8 +391,8 @@ p.pink:hover {
   border-spacing: 0;
 }
 .shows table td {
-  border-bottom: solid 1px #cbccd6;
-  color: #cbccd6;
+  border-bottom: solid 1px #FEFEFE;
+  color: #FEFEFE;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -444,78 +429,12 @@ p.pink:hover {
 }
 
 footer {
-  background-color: #F4591E;
+  background-color: #010101;
   min-height: 15vh;
 }
 
 .contact p {
   text-align: center;
-}
-
-.contactForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.contactForm input, .contactForm textarea {
-  color: #010101;
-  padding: 15px;
-  width: 70%;
-  border: none;
-  margin: 15px 0 15px 0;
-  font-family: inherit;
-  outline: none;
-}
-.contactForm input {
-  border-radius: 999px;
-}
-.contactForm label, .contactForm p.labelP {
-  color: white;
-  font-size: 3vh;
-  font-weight: 900;
-}
-.contactForm p.labelP {
-  margin: 20px auto;
-}
-.contactForm textarea {
-  border-radius: 5px;
-}
-.contactForm input[type=submit] {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-size: 2vh;
-  cursor: pointer;
-  transition: all ease-in-out 250ms;
-  background-color: white;
-}
-.contactForm input[type=submit]:hover {
-  transform: scaleX(0.8);
-  letter-spacing: 0.8rem;
-  transition: all ease-in-out 250ms;
-  color: white;
-  background-color: #F4591E;
-}
-.contactForm .inscriptionCheck {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-}
-.contactForm .inscriptionCheck input[type=radio] {
-  margin: 0 10px;
-  width: 10px;
-}
-.contactForm .inscriptionCheck label {
-  font-size: 2vh;
-  font-weight: inherit;
-}
-.contactForm #helpNom, .contactForm #helpTel, .contactForm #helpMail, .contactForm #helpRobot {
-  display: none;
-}
-
-.hidePara {
-  margin: 0;
-  color: #F4591E;
 }
 
 ::-webkit-input-placeholder {
@@ -544,7 +463,7 @@ footer {
 }
 footer p {
   margin: 10px 0 10px 0;
-  color: white;
+  color: #FEFEFE;
 }
 footer p.bolder {
   font-size: 1.2rem;
@@ -616,7 +535,7 @@ button[name=backSite] {
   max-width: 250px;
   margin: 25px;
   padding: 10px;
-  background-color: #F4591E;
+  background-color: #FEFEFE;
   font-size: 2.5vh;
   font-weight: bolder;
   color: white;
@@ -692,27 +611,12 @@ button[name=backSite] {
     max-width: 100%;
   }
 
-  .contactForm input, .contactForm textarea {
-    width: 90%;
-  }
-
   .imgContent .card::before {
     display: none;
   }
 
-  p.pink:hover {
-    transform: none;
-  }
-
   .shows table td a:hover {
     transform: none;
-  }
-
-  .contactForm input[type=submit]:hover {
-    transform: none;
-    letter-spacing: 0.2rem;
-    color: #010101;
-    background-color: white;
   }
 
   #upArrow {
@@ -727,15 +631,6 @@ button[name=backSite] {
     padding-left: 1px;
   }
 }
-@media all and (min-width: 768px) and (max-width: 1024px) {
-  form.newsletterForm input[type=email] {
-    width: 60%;
-  }
-
-  .contactForm input, .contactForm textarea {
-    width: 90%;
-  }
-}
 @media all and (max-width: 320px) {
   table {
     font-size: 0.8rem;
@@ -746,10 +641,6 @@ button[name=backSite] {
 
   .hardLight {
     font-size: 2vh;
-  }
-
-  form.newsletterForm input[type=email] {
-    width: 50%;
   }
 
   .footerBaner p.bolder {
