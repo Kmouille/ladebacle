@@ -14,12 +14,15 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Flaticon -->
-    <link rel="icon" type="image/png" href="./img/favicon-brush.png" />
-
     <!-- BALISE CANONIQUE -->
     <link rel="canonical" href="">
-
+    
+    <link rel="icon" type="image/png" href="my-favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="my-favicon/favicon.svg" />
+    <link rel="shortcut icon" href="my-favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="my-favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="La Débâcle" />
+    <link rel="manifest" href="my-favicon/site.webmanifest" />
   </head>
   <body>
 
@@ -55,24 +58,24 @@
           <img src="img/menu/home.svg" alt="Accueil">
       </div>
     </a>
-    <a href="#band">
-    <div class="ss-menu ss-menu-band">
-        <img src="img/menu/about_band.svg" alt="Biographie">
-    </div>
-    </a>
     <a href="#music">
       <div class="ss-menu ss-menu-music">
-          <img src="img/menu/music.svg" alt="Musique">
+          <img src="img/menu/music.svg" alt="Son">
       </div>
+    </a>
+    <a href="#band">
+    <div class="ss-menu ss-menu-band">
+        <img src="img/menu/about.png" alt="Bio">
+    </div>
     </a>
     <a href="#shows">
       <div class="ss-menu ss-menu-shows">
-          <img src="img/menu/live_shows.svg" alt="Concerts">
+          <img src="img/menu/shows.png" alt="Concerts">
       </div>
     </a>
     <a href="#contact">
       <div class="ss-menu ss-menu-contact">
-          <img src="img/menu/contact.svg" alt="Contacter la Débâcle">
+          <img src="img/menu/contact.png" alt="Contact">
       </div>
     </a>
 
@@ -80,13 +83,32 @@
 
   </section>
 
+  <a id="music"></a>
+  <section class="music">
+    <h2 class="animatableX">Son</h2>
+    <div class="separator animatableOpacity"></div>
+    <p class="hardLight animatableY" lang="fr">EP Manquer d'AIR</p>
+      <p class="animatableY">
+        Un 1er EP confié à Julien SOULA (aka Fryzzzer) pour la réalisation.
+        Trois titres comme une carte de visite.<br>
+        Intitulé <strong>Manquer d’AIR</strong>, cet EP propose un intense et savoureux mélange entre post hardcore et indie punk. 
+        « Explosif » est le terme approprié, avec ses mélodies pleines d’émotions,
+        son énergie brute et ses accroches immédiates. 
+        Des textes qui bataillent et tiennent en haleine et en émoi.
+        <br>
+        À ranger quelque part entre La Dispute, Chaviré, SPORT, BâtonRouge, Touché Amoré…
+      </p>
+      <div class="imgContent">
+        <div class="card">
+          <img src="./img/LaDebacle_EP_Manquer_d_air.jpg" alt="EP - Manquer d'AIR">
+        </div>
+      </div>
+  </section>
+
   <a id="band"></a>
   <section class="band">
-    <h2 class="animatableX">La Débâcle</h2>
+    <h2 class="animatableX">Bio</h2>
     <div class="separator animatableOpacity"></div>
-    <p class="hardLight animatableY" lang="fr">
-      "La Débâcle en héritage, la fuite juste après l’orage."
-    </p>
     <p class="animatableY">
       <em><strong>Définition</strong> : rupture brutale, soudaine, totale. Le terme a été popularisé par le roman d’Émile Zola ou la
       peinture de Monet. Dans tous les cas, c’est cet instant suspendu, celui où tout bascule, où tout ne sera plus
@@ -106,70 +128,11 @@
     </p>
     <div class="imgContent">
       <div class="card animatableY">
-        <img class="lazyload" src="./img/band/members-rec-blur.jpg" data-src="./img/band/mathieu-rec.jpg" alt="Chanteur">
-        <noscript>
-          <img src="./img/band/mathieu-rec.jpg" alt="Chanteur">
-        </noscript>
-        <p>Mathieu</p>
-        <p>Guitare, Chant principal</p>
-      </div>
-      <div class="card animatableY">
-        <img class="lazyload" src="./img/band/members-rec-blur.jpg" data-src="./img/band/fabrice-rec.jpg" alt="Guitariste">
-        <noscript>
-          <img src="./img/band/fabrice-rec.jpg" alt="Guitariste">
-        </noscript>
-        <p>Fabrice</p>
-        <p>Guitare, Choeurs</p>
-      </div>
-      <div class="card animatableY">
-        <img class="lazyload" src="./img/band/members-rec-blur.jpg" data-src="./img/band/flavien-rec.jpg" alt="Bassiste">
-        <noscript>
-          <img src="./img/band/flavien-rec.jpg" alt="Bassiste">
-        </noscript>
-        <p>Flavien</p>
-        <p>Basse, Choeurs</p>
-      </div>
-      <div class="card animatableY">
-        <img class="lazyload" src="./img/band/members-rec-blur.jpg" data-src="./img/band/camille-rec.jpg" alt="Batteur">
-        <noscript>
-          <img src="./img/band/camille-rec.jpg" alt="Batteur">
-        </noscript>
-        <p>Camille</p>
-        <p>Batterie</p>
-      </div>
-    </div>
-  </section>
-
-  <a id="music"></a>
-  <section class="music">
-    <h2 class="animatableX">Découvrir notre univers musical</h2>
-    <div class="separator animatableOpacity"></div>
-
-    <div class="ss-music">
-      <p class="hardLight animatableY">Mille éclairs</p>
-      <video class="animatableY" id="bandVideo" controls poster="./img/hader-brush-la-debacle.png" preload="none">
-      </video>
-    </div>
-
-  </section>
-
-  <section class="EP">
-    <div class="ss-music">
-      <p class="hardLight animatableY">EP Manquer d'AIR</p>
-      <p class="animatableY">
-        Un 1er EP confié à Julien SOULA (aka Fryzzzer) pour la réalisation.
-        Trois titres comme une carte de visite.<br><br>
-        Intitulé <strong>Manquer d’AIR</strong>, cet EP propose un intense et savoureux mélange entre post hardcore et indie punk. 
-        « Explosif » est le terme approprié, avec ses mélodies pleines d’émotions,
-        son énergie brute et ses accroches immédiates. 
-        Des textes qui bataillent et tiennent en haleine et en émoi.
-        <br><br>
-        À ranger quelque part entre La Dispute, Chaviré, SPORT, BâtonRouge, Touché Amoré…
-      </p>
-      <div class="imgContent">
-        <div class="animatableY">
-          <img class="lazyload" src="./img/members-rec-blur.jpg" data-src="./img/LaDebacle_EP_Manquer_d_air.jpg" alt="EP - Manquer d'AIR">
-        </div>
+        <img src="./img/band/band_members.jpg" alt="Les membres du groupe">
+        <p>Fabrice - Guitare, Choeurs</p>
+        <p>Mathieu - Guitare, Chant principal</p>
+        <p>Flavien - Basse, Choeurs</p>
+        <p>Camille - Batterie</p>
       </div>
     </div>
   </section>
@@ -225,9 +188,6 @@
     </div>
 
   </footer>
-
-    <!-- Lazyload-->
-    <script defer src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js" crossorigin></script>
 
     <script defer
       src="https://code.jquery.com/jquery-3.7.1.min.js"

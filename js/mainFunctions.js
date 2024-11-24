@@ -4,14 +4,14 @@ $(function () {
         $(this).toggleClass('active');
         if ($(this).hasClass('active')) {
             $('.ss-menu-home').addClass('visible1');
-            $('.ss-menu-band').addClass('visible2');
-            $('.ss-menu-music').addClass('visible3');
+            $('.ss-menu-music').addClass('visible2');
+            $('.ss-menu-band').addClass('visible3');
             $('.ss-menu-shows').addClass('visible4');
             $('.ss-menu-contact').addClass('visible5');
         } else {
             $('.ss-menu-home').removeClass('visible1');
-            $('.ss-menu-band').removeClass('visible2');
-            $('.ss-menu-music').removeClass('visible3');
+            $('.ss-menu-music').removeClass('visible2');
+            $('.ss-menu-band').removeClass('visible3');
             $('.ss-menu-shows').removeClass('visible4');
             $('.ss-menu-contact').removeClass('visible5');
         }
@@ -21,8 +21,8 @@ $(function () {
     $('.ss-menu').on('click', function () {
       $('.menu').removeClass('active');
       $('.ss-menu-home').removeClass('visible1');
-      $('.ss-menu-band').removeClass('visible2');
-      $('.ss-menu-music').removeClass('visible3');
+      $('.ss-menu-music').removeClass('visible2');
+      $('.ss-menu-band').removeClass('visible3');
       $('.ss-menu-shows').removeClass('visible4');
       $('.ss-menu-contact').removeClass('visible5');
     })
@@ -32,20 +32,12 @@ $(function () {
         if ($('.menu').hasClass('active')) {
           $('.menu').removeClass('active');
           $('.ss-menu-home').removeClass('visible1');
-          $('.ss-menu-band').removeClass('visible2');
-          $('.ss-menu-music').removeClass('visible3');
+          $('.ss-menu-music').removeClass('visible2');
+          $('.ss-menu-band').removeClass('visible3');
           $('.ss-menu-shows').removeClass('visible4');
           $('.ss-menu-contact').removeClass('visible5');
         }
     })
-})
-
-// Parallax effect and gsap
-$(function () {
-  if (!window.location.pathname.match("mentions")) {
-    $('.rellax').css('transform', 'translateX(-50%)');
-    var rellax = new Rellax('.rellax');
-  }
 })
 
 // Script adresse Email
@@ -99,13 +91,6 @@ $(function () {
           }
         }
     })
-})
-
-//Lazyload
-$(function () {
-  if (!window.location.pathname.match("mentions")) {
-    lazyload();
-  }
 })
 
 // resize reload
