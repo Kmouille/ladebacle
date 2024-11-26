@@ -62,37 +62,6 @@ $(function () {
     });
 })
 
-// Animations on scroll
-$(function () {
-    $(window).on('scroll', function () {
-        let sizePage = $(window).height();
-        let trigger = 100;
-        // Animation en Y
-        let element = document.getElementsByClassName('animatableY');
-        for (var unit of element) {
-          if (unit.getBoundingClientRect().top + trigger <= sizePage) {
-            unit.classList.add('showed');
-          }
-        }
-
-        // Animation en X
-        let elementh2 = document.getElementsByClassName('animatableX');
-        for (var unit of elementh2) {
-          if (unit.getBoundingClientRect().top + trigger <= sizePage) {
-            unit.classList.add('showed');
-          }
-        }
-
-        // Animation opacity
-        let elementOpacity = document.getElementsByClassName('animatableOpacity');
-        for (var unit of elementOpacity) {
-          if (unit.getBoundingClientRect().top + trigger <= sizePage) {
-            unit.classList.add('showed');
-          }
-        }
-    })
-})
-
 // resize reload
 $(function () {
   let initialWidth = $(window).innerWidth();

@@ -195,16 +195,24 @@ body {
 }
 
 section {
-  min-height: 80vh;
+  min-height: 40vh;
   padding: 50px 15% 50px 15%;
   background-color: #010101;
 }
 
+.smallsection {
+  min-height: 10vh;
+}
+
 .separator {
-  width: 10vw;
-  height: 2px;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   background-color: #FEFEFE;
 }
 
@@ -213,7 +221,7 @@ section {
   min-height: 100vh;
   max-height: 100vh;
   color: #FEFEFE;
-  background: url("../img/hader-brush-la-debacle.png");
+  background: url("../img/header-brush-la-debacle.png");
   background-size: cover;
   background-position: center;
   background-color: transparent;
@@ -230,29 +238,8 @@ h1 {
   font-weight: 900;
   color: #FEFEFE;
   text-shadow: 0 2px 10px #010101;
-  opacity: 0;
-  -webkit-animation: opacity 2s cubic-bezier(0.17, 0.67, 0.14, 0.97) both;
-  animation: opacity 2s cubic-bezier(0.17, 0.67, 0.14, 0.97) both;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
 }
 
-@-webkit-keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 h2 {
   font-size: 2rem;
 }
@@ -268,34 +255,20 @@ h2#slogan {
   font-weight: 600;
   color: #FEFEFE;
   text-shadow: 0 2px 10px #010101;
-  opacity: 0;
-  transform: translateY(-45px);
-  -webkit-animation: slideY 2s cubic-bezier(0.17, 0.67, 0.14, 0.97) both;
-  animation: slideY 2s cubic-bezier(0.17, 0.67, 0.14, 0.97) both;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
 }
 
-@-webkit-keyframes slideY {
-  from {
-    opacity: 0;
-    transform: translateY(-45px) translateX(-50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) translateX(-50%);
-  }
+.pageseparator {
+  position: relative;
+  text-align: center;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+  font-size: 4vh;
+  color: #FEFEFE;
+  text-shadow: 0 2px 10px #010101;
 }
-@keyframes slideY {
-  from {
-    opacity: 0;
-    transform: translateY(-45px) translateX(-50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) translateX(-50%);
-  }
-}
+
 p {
   color: #FEFEFE;
   line-height: 30px;
@@ -524,6 +497,7 @@ footer img {
     transform: scale(1);
   }
 }
+
 button[name=backSite] {
   border: none;
   border-radius: 5px;
@@ -535,29 +509,6 @@ button[name=backSite] {
   font-weight: bolder;
   color: white;
   cursor: pointer;
-}
-
-.animatableY {
-  opacity: 0;
-  transform: translate3d(0, 3vh, 0);
-  transition: all ease-in-out 1s;
-}
-
-.animatableX {
-  opacity: 0;
-  transform: translate3d(-3vw, 0, 0);
-  transition: all ease-in-out 1s;
-}
-
-.animatableOpacity {
-  opacity: 0;
-  transition: all ease-in-out 1s;
-}
-
-.showed {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition: all ease-in-out 1s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -573,6 +524,7 @@ button[name=backSite] {
     transform: scaleX(1);
   }
 }
+
 @media screen and (max-width: 767px) {
   h1 {
     width: 90%;
@@ -626,6 +578,7 @@ button[name=backSite] {
     padding-left: 1px;
   }
 }
+
 @media all and (max-width: 320px) {
   table {
     font-size: 0.8rem;
