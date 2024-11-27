@@ -540,14 +540,6 @@ button[name=backSite] {
     bottom: 20%;
   }
 
-  .shareBtn {
-    display: none;
-  }
-
-  footer .socialBanner {
-    display: none;
-  }
-
   section {
     padding: 50px 2% 50px 2%;
   }
