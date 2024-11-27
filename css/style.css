@@ -33,10 +33,12 @@ body {
 }
 
 .shareBtn {
-  position: absolute;
+  position: fixed;
+  display: flex;
   top: 5%;
   left: 15%;
   display: flex;
+  background-color: #010101
 }
 
 .elementBtn {
@@ -466,8 +468,8 @@ footer img {
   position: fixed;
   bottom: 5%;
   right: 5%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 }
 #upArrow:hover {
