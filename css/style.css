@@ -1,3 +1,8 @@
+@font-face {
+  font-family: bahnschrift;
+  src: url(fonts/bahnschrift.ttf);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,28 +13,47 @@ html {
   margin: 0;
 }
 
-::-moz-selection {
-  background-color: #FEFEFE;
-  color: white;
-}
-
-::selection {
-  background-color: #FEFEFE;
-  color: white;
-}
-
 a {
   text-decoration: inherit;
   color: inherit;
 }
 
+header {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center; /* Aligne les éléments verticalement */
+  padding: 15px; /* Ajustez le padding selon vos besoins */
+  height: 130px;
+}
+
+.top {
+  display: flex;
+  align-items: center; /* Aligne les éléments verticalement */
+  justify-content: space-around;
+}
+
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "bahnschrift", sans-serif;
   font-display: swap;
   font-size: 1rem;
   color: #FEFEFE;
   font-size: 18px;
   background-color: #010101;
+}
+
+.logo-container img {
+  position: relative;
+  height: auto;
+  max-height: 80px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25px;
 }
 
 .shareBtn {
@@ -48,7 +72,7 @@ body {
 }
 .elementBtn img {
   position: relative;
-  width: 30px;
+  width: 40px;
 }
 
 .menu {
@@ -57,9 +81,9 @@ body {
   justify-content: center;
   align-items: center;
   top: 5%;
-  right: 5%;
-  width: 50px;
-  height: 50px;
+  right: 15%;
+  width: 40px;
+  height: 40px;
   background-color: #FEFEFE;
   border: solid 2px #FEFEFE;
   border-radius: 50%;
@@ -104,9 +128,9 @@ body {
   justify-content: center;
   align-items: center;
   top: 5%;
-  right: 5%;
-  width: 50px;
-  height: 50px;
+  right: 15%;
+  width: 40px;
+  height: 40px;
   background-color: #010101;
   border: solid 2px #FEFEFE;
   border-radius: 50%;
@@ -120,8 +144,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   transition: all ease-in-out 100ms;
 }
 .ss-menu:hover img {
@@ -158,7 +182,7 @@ body {
 
 .visible1 {
   opacity: 1;
-  transform: translateY(75px);
+  transform: translateY(55px);
   transition: all ease-in-out 250ms;
   transition-delay: 25ms;
   z-index: 1;
@@ -166,7 +190,7 @@ body {
 
 .visible2 {
   opacity: 1;
-  transform: translateY(150px);
+  transform: translateY(110px);
   transition: all ease-in-out 250ms;
   transition-delay: 50ms;
   z-index: 1;
@@ -174,7 +198,7 @@ body {
 
 .visible3 {
   opacity: 1;
-  transform: translateY(225px);
+  transform: translateY(165px);
   transition: all ease-in-out 250ms;
   transition-delay: 100ms;
   z-index: 1;
@@ -182,7 +206,7 @@ body {
 
 .visible4 {
   opacity: 1;
-  transform: translateY(300px);
+  transform: translateY(220px);
   transition: all ease-in-out 250ms;
   transition-delay: 125ms;
   z-index: 1;
@@ -190,7 +214,7 @@ body {
 
 .visible5 {
   opacity: 1;
-  transform: translateY(375px);
+  transform: translateY(275px);
   transition: all ease-in-out 250ms;
   transition-delay: 150ms;
   z-index: 1;
@@ -215,7 +239,12 @@ section {
   height: 3px;
   margin-top: 10px;
   margin-bottom: 30px;
-  background-color: #FEFEFE;
+  background-color: #000000;
+}
+
+.separator_header {
+  min-height: 150px;
+  height: 150px;
 }
 
 .mainView {
@@ -284,7 +313,7 @@ p.miniPara {
 }
 
 .hardLight {
-  font-size: 3vh;
+  font-size: 2vh;
   line-height: 40px;
   font-weight: 900;
   text-align: center;
@@ -463,20 +492,6 @@ footer img {
   cursor: default;
 }
 
-#upArrow {
-  display: none;
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-#upArrow:hover {
-  -webkit-animation: animeLogo ease-in-out 0.3s;
-  animation: animeLogo ease-in-out 0.3s;
-}
-
 @-webkit-keyframes animeLogo {
   0% {
     transform: scale(1);
@@ -558,14 +573,6 @@ button[name=backSite] {
 
   .shows table td a:hover {
     transform: none;
-  }
-
-  #upArrow {
-    width: 48px;
-  }
-  #upArrow:hover {
-    -webkit-animation: none;
-    animation: none;
   }
 
   .shows table td:nth-of-type(even) {
