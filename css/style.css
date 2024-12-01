@@ -3,6 +3,15 @@
   src: url(fonts/bahnschrift.ttf);
 }
 
+::-moz-selection {
+  background-color: #383838;
+  color: white;
+}
+
+::selection {
+  background-color: #383838;
+  color: white;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -49,7 +58,7 @@ body {
 .logo-container img {
   position: relative;
   height: auto;
-  max-height: 80px;
+  max-height: 100px;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
