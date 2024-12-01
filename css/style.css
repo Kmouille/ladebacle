@@ -470,12 +470,13 @@ footer p.bolder {
   font-weight: bold;
 }
 footer .socialBanner {
+  display: none;
+}
+header .socialBanner {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 footer img {
-  max-width: 50px;
+  max-width: 40px;
   margin: 0 2px 0 2px;
   cursor: pointer;
 }
@@ -540,6 +541,7 @@ button[name=backSite] {
   .menu.active .line3 {
     transform: scaleX(1);
   }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -563,10 +565,6 @@ button[name=backSite] {
     width: 100%;
   }
 
-  #bandVideo {
-    max-width: 100%;
-  }
-
   .imgContent .card::before {
     display: none;
   }
@@ -578,6 +576,17 @@ button[name=backSite] {
   .shows table td:nth-of-type(even) {
     padding-left: 1px;
   }
+
+  footer .socialBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header .socialBanner {
+    display: none;
+  }
+
 }
 
 @media all and (max-width: 320px) {
@@ -595,6 +604,17 @@ button[name=backSite] {
   .footerBaner p.bolder {
     font-size: 0.8rem;
   }
+
+  footer .socialBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header .socialBanner {
+    display: none;
+  }
+
 }
 
 /*# sourceMappingURL=style.css.map */
