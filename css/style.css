@@ -297,6 +297,11 @@ h2#slogan {
   text-shadow: 0 2px 10px #010101;
 }
 
+h3{
+  text-align: center;
+  margin: 1vh;
+}
+
 .pageseparator {
   position: relative;
   text-align: center;
@@ -395,9 +400,10 @@ p.miniTitle {
 }
 
 .shows table {
-  margin: 70px 0;
+  margin: 40px 0;
   width: 100%;
   border-spacing: 0;
+  table-layout: fixed;
 }
 .shows table td {
   border-bottom: solid 1px #FEFEFE;
