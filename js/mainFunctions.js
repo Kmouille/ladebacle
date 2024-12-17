@@ -3,13 +3,13 @@ $(function () {
     $('.menu').on('click', function () {
         $(this).toggleClass('active');
         if ($(this).hasClass('active')) {
-            $('.ss-menu-music').addClass('visible1');
-            $('.ss-menu-band').addClass('visible2');
+            $('.ss-menu-band').addClass('visible1');
+            $('.ss-menu-music').addClass('visible2');
             $('.ss-menu-shows').addClass('visible3');
             $('.ss-menu-contact').addClass('visible4');
         } else {
-            $('.ss-menu-music').removeClass('visible1');
-            $('.ss-menu-band').removeClass('visible2');
+            $('.ss-menu-band').removeClass('visible1');
+            $('.ss-menu-music').removeClass('visible2');
             $('.ss-menu-shows').removeClass('visible3');
             $('.ss-menu-contact').removeClass('visible4');
         }
@@ -18,8 +18,8 @@ $(function () {
 $(function () {
     $('.ss-menu').on('click', function () {
       $('.menu').removeClass('active');
-      $('.ss-menu-music').removeClass('visible1');
-      $('.ss-menu-band').removeClass('visible2');
+      $('.ss-menu-band').removeClass('visible1');
+      $('.ss-menu-music').removeClass('visible2');
       $('.ss-menu-shows').removeClass('visible3');
       $('.ss-menu-contact').removeClass('visible4');
     })
@@ -28,8 +28,8 @@ $(function () {
     $(window).on('scroll', function () {
         if ($('.menu').hasClass('active')) {
           $('.menu').removeClass('active');
-          $('.ss-menu-music').removeClass('visible1');
-          $('.ss-menu-band').removeClass('visible2');
+          $('.ss-menu-band').removeClass('visible1');
+          $('.ss-menu-music').removeClass('visible2');
           $('.ss-menu-shows').removeClass('visible3');
           $('.ss-menu-contact').removeClass('visible4');
         }
