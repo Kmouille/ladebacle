@@ -377,7 +377,7 @@ p.miniPara {
 .imgContent img {
   position: relative;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   margin: 15px auto;
   border-radius: 15px;
 }
