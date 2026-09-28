@@ -16,14 +16,46 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- BALISE CANONIQUE -->
-    <link rel="canonical" href="">
-    
+    <link rel="canonical" href="https://ladebacle.fr/">
+
+    <!-- Open Graph / Twitter Card -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="La Débâcle">
+    <meta property="og:title" content="La Débâcle">
+    <meta property="og:description" content="Le site web du groupe français La Débâcle, de Toulouse. Inspiré par La Dispute, Chaviré, SPORT, BâtonRouge, Touché Amoré, découvrez leur musique et leur univers post-punk-rock.">
+    <meta property="og:url" content="https://ladebacle.fr/">
+    <meta property="og:image" content="https://ladebacle.fr/img/band/band_members.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="La Débâcle">
+    <meta name="twitter:description" content="Le site web du groupe français La Débâcle, de Toulouse. Inspiré par La Dispute, Chaviré, SPORT, BâtonRouge, Touché Amoré, découvrez leur musique et leur univers post-punk-rock.">
+    <meta name="twitter:image" content="https://ladebacle.fr/img/band/band_members.jpg">
+
     <link rel="icon" type="image/png" href="my-favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="my-favicon/favicon.svg" />
     <link rel="shortcut icon" href="my-favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="my-favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="La Débâcle" />
     <link rel="manifest" href="my-favicon/site.webmanifest" />
+
+    <!-- Structured data: band identity (see js/dates.js for per-show MusicEvent data) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "La Débâcle",
+      "genre": ["Post-hardcore", "Indie punk"],
+      "url": "https://ladebacle.fr/",
+      "image": "https://ladebacle.fr/img/band/band_members.jpg",
+      "sameAs": [
+        "https://www.facebook.com/ladebacleofficiel",
+        "https://www.instagram.com/ladebacleofficiel",
+        "https://soundcloud.com/ladebacle/",
+        "https://ladebacle.bandcamp.com",
+        "https://www.youtube.com/@ladebacleofficiel",
+        "https://distrokid.com/hyperfollow/ladbcle/manquer-dair"
+      ]
+    }
+    </script>
   </head>
 
   <body>
@@ -62,6 +94,7 @@
         </div>
       </div>
   
+      <h1 class="visually-hidden">La Débâcle</h1>
       <div class="logo-container">
           <a href="#">
               <img src="img/logo.png" alt="Logo La Débâcle" class="logo-grand">
@@ -160,66 +193,14 @@
         <div class="separator_dates"></div>
 
         <h3>À venir</h3>
-        <!-- Table shows dates -->
+        <!-- Rows loaded from dates.csv by js/dates.js -->
         <table>
-          <tr>
-            <td>13/06/2026</td>
-            <td><span class="white">
-                <a href="https://www.facebook.com/events/1954089448804825/" target="_blank">Le Ravelin</a></span></td>
-            <td>Toulouse (31)</td>
-          </tr>
+          <tbody id="upcoming-shows"></tbody>
         </table>
         <h3>Passées</h3>
-        <!-- Table shows dates -->
+        <!-- Rows loaded from dates.csv by js/dates.js -->
         <table>
-          <tr>
-            <td>24/01/2026</td>
-            <td><span class="white">
-                <a href="https://www.facebook.com/profile.php?id=100087480184912" target="_blank">Ride'n'Rock</a></span></td>
-            <td>Montans (81)</td>
-          </tr>
-          <tr>
-            <td>17/01/2026</td>
-            <td><span class="white">
-                <a href="https://www.facebook.com/events/avenue-paul-riquet-31670-labège-france/anniversaire-kartier-libre-18-ans-/1236164634849645" target="_blank">Espace Claude Ducert</a></span></td>
-            <td>Labège (31)</td>
-          </tr>
-          <tr>
-            <td>06/12/2025</td>
-            <td><span class="white">
-                <a href="https://www.facebook.com/profile.php?id=100090689928913" target="_blank">L'Autan</a></span></td>
-            <td>Toulouse (31)</td>
-          </tr>
-          <tr>
-            <td>21/11/2025</td>
-            <td><span class="white">
-                <a href="https://www.facebook.com/profile.php?id=100090689928913" target="_blank">Le Moun's</a></span></td>
-            <td>Les Barthes (82)</td>
-          </tr>
-          <tr>
-            <td>13/09/2025</td>
-            <td><span class="white">
-                <a href="https://www.facebook.com/profile.php?id=100090689928913" target="_blank">Le Dropkick Bar</a></span></td>
-            <td>Limoges (87)</td>
-          </tr>
-          <tr>
-            <td>12/09/2025</td>
-            <td><span class="white">
-                <a href="https://www.facebook.com/CeltiCPuBisNoTaPuB" target="_blank">Celtic Pub</a></span></td>
-            <td>Tarbes (65)</td>
-          </tr>
-          <tr>
-            <td>12/07/2025</td>
-            <td><span class="white">
-                <a href="https://www.facebook.com/seaseysses.andsun" target="_blank">Rock'n'Boulouze</a></span></td>
-            <td>Seysses-Savès (32)</td>
-          </tr>
-          <tr>
-            <td>07/12/2024</td>
-            <td><span class="white">
-              <a href="https://www.facebook.com/events/505278785535272" target="_blank">L'Engrenage</a></span></td>
-            <td>Balma (31)</td>
-          </tr>
+          <tbody id="past-shows"></tbody>
         </table>
 
       </section>
@@ -265,7 +246,7 @@
       </div>
       <div>
           <span>
-              <p class="bolder">Copyright © 2024 La Débâcle</p>
+              <p class="bolder">Copyright © <span id="copyright-year">2024</span> La Débâcle</p>
           </span>
       </div>
     </footer>
@@ -277,5 +258,6 @@
     </script>
 
     <script defer src="js/mainFunctions.js"></script>
+    <script defer src="js/dates.js"></script>
   </body>
 </html>
